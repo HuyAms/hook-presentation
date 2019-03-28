@@ -13,7 +13,6 @@ class Counter extends Component {
   }
 }
 
-
 class CounterDifference extends Component {
 
   state = {
@@ -33,6 +32,7 @@ class CounterDifference extends Component {
 
     return (
         <div>
+          <h2>Lift state</h2>
           <div>
             <Counter incrementCount={this.incrementCount1} count={this.state.counter1} name="Counter 1"/>
           </div>

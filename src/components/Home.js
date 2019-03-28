@@ -11,6 +11,7 @@ class Home extends Component {
             <li><Link to="/01">1. UseState</Link></li>
             <li><Link to="/02">2. CustomHook</Link></li>
             <li><Link to="/03">3. ReuseLogic</Link></li>
+            <li><Link to="/03-renderprops">3.1. ReuseLogic - Render props</Link></li>
           </ul>
 
         </div>
