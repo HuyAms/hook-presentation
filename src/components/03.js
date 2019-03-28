@@ -34,12 +34,10 @@ class CounterDifference extends Component {
     return (
         <div>
           <div>
-            <p>Counter1</p>
             <Counter incrementCount={this.incrementCount1} count={this.state.counter1} name="Counter 1"/>
           </div>
           <div>Difference: {this.state.counter1 - this.state.counter2}</div>
           <div>
-            <p>Counter2</p>
             <Counter incrementCount={this.incrementCount2}  count={this.state.counter2} name="Counter 2"/>
           </div>
         </div>
