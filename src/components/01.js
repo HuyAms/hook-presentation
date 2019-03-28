@@ -1,6 +1,6 @@
 // Counter: useState
 import React, {Component} from 'react'
-import {Button} from 'bootstrap';
+import {Button} from 'react-bootstrap';
 
 class Counter extends Component {
 

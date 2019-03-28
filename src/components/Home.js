@@ -9,7 +9,7 @@ class Home extends Component {
           <ul>
             <li><Link to="/motivation">Motivation</Link></li>
             <li><Link to="/01">1. UseState</Link></li>
-            <li><Link to="/02">1. CustomHook</Link></li>
+            <li><Link to="/02">2. CustomHook</Link></li>
           </ul>
 
         </div>

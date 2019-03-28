@@ -1,20 +1,16 @@
 // customHook
-import React, {Component} from 'react'
+import React, {useState} from 'react'
 import {Button} from 'react-bootstrap';
 
-class Counter extends Component {
+const Counter = () => {
 
-  state = {count: 0}
+  const [count, setCount] = useState(0);
 
-  incrementCount = () => this.setState((prevState) => {
-    return { count: prevState.count + 1 }
-  })
+  const incrementCount = () => setCount(count + 1)
 
-  render() {
-    return (
-        <Button onClick={this.incrementCount}>{this.state.count}</Button>
-    );
-  }
+  return (
+      <Button onClick={incrementCount}>{count}</Button>
+  )
 }
 
 export default Counter
