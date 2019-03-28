@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import {Route, Switch} from 'react-router-dom';
-import Home from './components/Home';
-import Motivation from './components/Motivation';
-import UseState from './components/01';
-import CustomHook from './components/02';
-import ReuseLogic from './components/03';
-import ReuseLoginRenderProp from './components/03-renderprops';
+import Home from './excercises/Home';
+import Motivation from './excercises/Motivation';
+import E01 from './excercises/01';
+import E02 from './excercises/02';
+import E03 from './excercises/03';
+import E04 from './excercises/04';
 
 class App extends Component {
   render() {
@@ -13,9 +13,9 @@ class App extends Component {
       <div className="App">
         <Switch>
           <Route path="/motivation" component={Motivation}/>
-          <Route path="/01" component={UseState}/>
-          <Route path="/02" component={CustomHook}/>
-          <Route path="/03" component={ReuseLogic}/>
+          <Route path="/01" component={E01}/>
+          <Route path="/02" component={E02}/>
+          <Route path="/03" component={E03}/>
           <Route path="/03-renderprops" component={ReuseLoginRenderProp}/>
           <Route path="/" component={Home}/>
         </Switch>
