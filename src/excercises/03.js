@@ -2,6 +2,8 @@
 import React, {Component} from 'react'
 import {Button} from 'react-bootstrap';
 
+// === Counter =====
+
 class Counter extends Component {
 
   render() {
@@ -12,6 +14,8 @@ class Counter extends Component {
     );
   }
 }
+
+// === CounterDifference =====
 
 class CounterDifference extends Component {
 
@@ -32,13 +36,13 @@ class CounterDifference extends Component {
 
     return (
         <div>
-          <h2>Lift state</h2>
+          <h1>Pattern 1</h1>
           <div>
-            <Counter incrementCount={this.incrementCount1} count={this.state.counter1} name="Counter 1"/>
+            <Counter incrementCount={this.incrementCount1} count={this.state.counter1} name="1"/>
           </div>
           <div>Difference: {this.state.counter1 - this.state.counter2}</div>
           <div>
-            <Counter incrementCount={this.incrementCount2}  count={this.state.counter2} name="Counter 2"/>
+            <Counter incrementCount={this.incrementCount2}  count={this.state.counter2} name="2"/>
           </div>
         </div>
     )

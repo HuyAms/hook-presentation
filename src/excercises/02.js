@@ -9,7 +9,10 @@ const Counter = () => {
   const incrementCount = () => setCount(count + 1)
 
   return (
-      <Button onClick={incrementCount}>{count}</Button>
+      <div>
+        <h1>Custom Hook</h1>
+        <Button onClick={incrementCount}>Counter: {count}</Button>
+      </div>
   )
 }
 

@@ -12,7 +12,10 @@ class Counter extends Component {
 
   render() {
     return (
-        <Button onClick={this.incrementCount}>{this.state.count}</Button>
+        <div>
+          <h1>UseState</h1>
+          <Button onClick={this.incrementCount}>Counter: {this.state.count}</Button>
+        </div>
     );
   }
 }
