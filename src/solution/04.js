@@ -31,12 +31,16 @@ const SuperCounter = () => {
   return (
       <div>
         <h1>Render Props</h1>
-        <div>
-          <Counter count={count} incrementCount={incrementCount} name="1"/>
+
+        <Counter count={count} incrementCount={incrementCount} name="1"/>
+
+        <div style={{backgroundColor: '#cbfcff', marginTop: '30px'}}>
+          <h2 style={{color: '#f58a03'}}>I am NOT part of the Counter component</h2>
           <div>
-            <div>Double counter: {count * 2}</div>
-            <div>Tripple counter: {count * 3}</div>
-            <div>Quadruple counter: {count * 4}</div>
+            <p>Double counter: {count * 2}</p>
+            <p>Tripple counter: {count * 3}</p>
+            <p>Quadruple counter: {count * 4}</p>
+            <Button variant="warning" onClick={incrementCount}>Click me. I am not the Counter</Button>
           </div>
         </div>
       </div>

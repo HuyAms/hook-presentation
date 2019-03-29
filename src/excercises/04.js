@@ -1,10 +1,10 @@
 // Reuse logic, renderprops
-import React, {Component, PureComponent} from 'react'
-import {Button} from 'react-bootstrap';
+import React, {Component} from 'react'
+import {Button, Row} from 'react-bootstrap';
 
 // === Counter =====
 
-class Counter extends PureComponent {
+class Counter extends Component {
 
   state = {count: 0}
 
@@ -19,7 +19,7 @@ class Counter extends PureComponent {
     return (
         <div>
           <Button onClick={this.incrementCount}>Counter {name}: {this.state.count}</Button>
-          {children(this.state.count)}
+          {children(this.state.count, this.incrementCount)}
         </div>
     );
   }
@@ -36,11 +36,13 @@ class SuperCounter extends Component {
           <h1>Pattern 2</h1>
           <div>
             <Counter name="1">
-              {count => (
-                  <div>
-                    <div>Double counter: {count * 2}</div>
-                    <div>Tripple counter: {count * 3}</div>
-                    <div>Quadruple counter: {count * 4}</div>
+              {(count, incrementCount) => (
+                  <div style={{backgroundColor: '#cbfcff', marginTop: '30px'}}>
+                    <h2 style={{color: '#f58a03'}}>I am NOT part of the Counter component</h2>
+                    <p>Double counter: {count * 2}</p>
+                    <p>Tripple counter: {count * 3}</p>
+                    <p>Quadruple counter: {count * 4}</p>
+                    <Button variant="warning" onClick={incrementCount}>Click me. I am not the Counter</Button>
                   </div>
               )}
             </Counter>

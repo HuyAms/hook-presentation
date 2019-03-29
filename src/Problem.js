@@ -124,9 +124,9 @@ class FriendStatus extends React.Component {
   <withSubcribeToStatus>
     <withSetTitle>
       <FriendStatus/>
-    </Wrapper3>
-  </Wrapper2>
-</Wrapper1>
+    </withSetTitle>
+  </withSubcribeToStatus>
+</withSubcribeToFeed>
 
 */
 
@@ -186,4 +186,3 @@ const FriendStatus = () => {
       <div>Foo</div>
   )
 }
-
