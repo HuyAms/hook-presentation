@@ -21,7 +21,7 @@ class About extends Component {
             <h1>Not about</h1>
             <ul>
               <li>Everything in Hook</li>
-              <li>100% very practical and complicated example</li>
+              <li>100% very practical and complicated examples</li>
             </ul>
           </div>
           <Button onClick={this.getStart}>Get Started!</Button>

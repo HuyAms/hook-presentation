@@ -1,6 +1,6 @@
 // Reuse logic, renderprops
 import React, {Component} from 'react'
-import {Button, Row} from 'react-bootstrap';
+import {Button} from 'react-bootstrap';
 
 // === Counter =====
 
@@ -25,7 +25,7 @@ class Counter extends Component {
   }
 }
 
-// === SuperCounter =====
+// === SuperCounter - Render props =====
 
 class SuperCounter extends Component {
 
@@ -37,7 +37,7 @@ class SuperCounter extends Component {
           <div>
             <Counter name="1">
               {(count, incrementCount) => (
-                  <div style={{backgroundColor: '#cbfcff', marginTop: '30px'}}>
+                  <div style={{backgroundColor: '#cbfcff', marginTop: '30px', padding: '20px'}}>
                     <h2 style={{color: '#f58a03'}}>I am NOT part of the Counter component</h2>
                     <p>Double counter: {count * 2}</p>
                     <p>Tripple counter: {count * 3}</p>

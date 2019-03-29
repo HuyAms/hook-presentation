@@ -70,6 +70,10 @@ class FriendStatus extends React.Component {
 
 // TODO: with HOC or Render props
 
+// TODO: Subcribe To Feed (REUSE)
+// TODO: Subcribe To Status (REUSE)
+// TODO: Set document title (REUSE)
+
 // ======= HOC ======
 
 const withSubcribeToFeed = WrappedComponent => {
@@ -162,6 +166,10 @@ class FriendStatus extends React.Component {
 
 
 // TODO: with Hook
+
+// TODO: Subcribe To Feed (REUSE)
+// TODO: Subcribe To Status (REUSE)
+// TODO: Set document title (REUSE)
 
 // ===== HOOK =====
 

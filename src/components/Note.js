@@ -16,11 +16,11 @@ class Note extends Component {
             </ul>
           </div>
           <div className="what">
-            <h1>What is Hook?</h1>
+            <h1>What?</h1>
             <Card body>Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.</Card>
           </div>
           <div className='rule'>
-            <h1>Rule of Hook</h1>
+            <h1>Rules of Hooks</h1>
             <ul>
               <li><FaCheck color='green'/> Only Call Hooks at the Top Level</li>
               <li><FaCheck color='green'/> Call Hooks from React function components</li>
@@ -28,6 +28,7 @@ class Note extends Component {
               <br/>
               <li><FaExclamation color='red'/> Don’t call Hooks inside loops, conditions, or nested functions</li>
               <li><FaExclamation color='red'/> Don’t call Hooks from regular JavaScript functions</li>
+              <li><FaExclamation color='red'/> Don’t rewrite all your existing class components without any reason</li>
             </ul>
           </div>
         </div>
