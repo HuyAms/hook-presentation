@@ -10,10 +10,11 @@ class Home extends Component {
           <ul>
             <li><Link to="/motivation">Motivation</Link></li>
             <li><Link to="/01">01. UseState</Link></li>
-            <li><Link to="/02">02. CustomHook</Link></li>
+            <li><Link to="/02">02. CustomHook - UseState</Link></li>
             <li><Link to="/03">03. Pattern 1</Link></li>
             <li><Link to="/04">04. Pattern 2</Link></li>
             <li><Link to="/05">05. UseEffect</Link></li>
+            <li><Link to="/06">06. CustomHook - UseEffect</Link></li>
           </ul>
         </div>
     );

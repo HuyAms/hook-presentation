@@ -1,14 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import {Button} from "react-bootstrap";
 
-//TODO: Subcribe Feed with ID
+const useSubscribeToFeed = (initialId) => {
 
-// === Component =====
-
-const UseEffect = (props) => {
-
-  const [count, setCount] = useState(0)
-  const [id, setId] = useState(1)
+  const [id, setId] = useState(initialId)
 
   useEffect(() => {
     subcribeToFeed(id)
@@ -16,13 +11,24 @@ const UseEffect = (props) => {
     return () => unscribeToFeed(id)
   }, [id])
 
-  const incrementCount = () => setCount(count + 1)
-
   const changeId = () => setId(id + 1)
+
+  return [id, changeId]
+}
+
+// === Component =====
+
+const UseEffect = (props) => {
+
+  const [count, setCount] = useState(0)
+
+  const [id, changeId] = useSubscribeToFeed(1)
+
+  const incrementCount = () => setCount(count + 1)
 
   return (
       <div>
-        <h1>UseEffect</h1>
+        <h1>CustomHook - UseEffect</h1>
         <Button onClick={incrementCount}>Counter: {count}</Button>
         <br/>
         <Button onClick={changeId}>ChangeID: {id}</Button>
