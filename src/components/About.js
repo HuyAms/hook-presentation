@@ -13,14 +13,14 @@ class About extends Component {
           <div>
             <h1>About</h1>
             <ul>
-              <li>Hook introduction</li>
+              <li>Hooks introduction</li>
               <li>Excercises</li>
             </ul>
           </div>
           <div>
             <h1>Not about</h1>
             <ul>
-              <li>Everything in Hook</li>
+              <li>Everything in Hooks</li>
               <li>100% very practical and complicated examples</li>
             </ul>
           </div>

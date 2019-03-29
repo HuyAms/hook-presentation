@@ -1,5 +1,5 @@
 // reuse logic
-import React, {Component, useState} from 'react'
+import React, {Component} from 'react'
 import {Button} from 'react-bootstrap';
 
 // === Counter =====
