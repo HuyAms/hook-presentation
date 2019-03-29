@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import {Route, Switch, Redirect} from 'react-router-dom';
 import Layout from './layout/Layout';
-import Home from './excercises/Home';
-import Motivation from './excercises/Motivation';
+import Home from './components/Home';
+import About from './components/About';
+import Note from './components/Note';
 import E01 from './excercises/01';
 import E02 from './excercises/02';
 import E03 from './excercises/03';
@@ -22,7 +23,8 @@ class App extends Component {
       <div className="App">
         <Layout>
           <Switch>
-            <Route path="/motivation" component={Motivation}/>
+            <Route path="/note" component={Note}/>
+            <Route path="/home" component={Home}/>
             <Route path="/01" component={E01}/>
             <Route path="/02" component={E02}/>
             <Route path="/03" component={E03}/>
@@ -35,7 +37,7 @@ class App extends Component {
             <Route path="/04S" component={E04S}/>
             <Route path="/05S" component={E05S}/>
             <Route path="/06S" component={E06S}/>
-            <Route path="/" component={Home}/>
+            <Route path="/" component={About}/>
             <Redirect to="/"/>
           </Switch>
         </Layout>

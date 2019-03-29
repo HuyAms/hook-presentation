@@ -10,7 +10,7 @@ const Header = () => {
       <nav className='main-nav'>
         <Navbar bg="dark" variant="dark">
           <Navbar.Brand>
-            <Link to="/">
+            <Link to="/home">
                 <img
                     alt="React Hook"
                     src={ReactHook}

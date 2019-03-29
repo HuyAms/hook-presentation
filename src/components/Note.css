@@ -1,0 +1,11 @@
+.note h1 {
+    color: dodgerblue;
+}
+
+.rule ul {
+    list-style: none;
+}
+
+.why, .what, .rule {
+    margin-bottom: 10px;
+}

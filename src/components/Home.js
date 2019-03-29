@@ -8,7 +8,7 @@ class Home extends Component {
         <div className="Home">
           <h1>Home</h1>
           <ul>
-            <li><Link to="/motivation">Motivation</Link></li>
+            <li><Link to="/note">Note</Link></li>
             <li><Link to="/01">01. UseState</Link></li>
             <li><Link to="/02">02. CustomHook - UseState</Link></li>
             <li><Link to="/03">03. Pattern 1</Link></li>
